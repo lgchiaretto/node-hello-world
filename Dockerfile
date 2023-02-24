@@ -5,7 +5,7 @@ RUN apk add --no-cache python3 make gcc g++ tzdata
 COPY package.json $HOME/
 RUN npm install
 COPY . $HOME/
-#RUN npm run build
+RUN npm run build
 RUN rm -fr $HOME/src
 RUN npm prune --production
 # --------------------------------------------------------------------
