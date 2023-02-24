@@ -1,37 +1,23 @@
-# node-hello-world
+# example-frontend-classic-js
 
-This is an example Express server, which serves an API.
+An very basic example frontend for Vega implemented as a classic Node.js web app without any fancy stuff.
 
-Express is the "fast, unopinionated, minimalist web framework for Node.js".
+The idea is to provide a simple codebase where only basic knowledge to Javascript and HTML is needed to customize and get a journal up and running in no time.
 
-To run:
+## Built on
 
-    npm install
-    npm start
+* Node 6.5
+* Express server
+* Templating with HTML-like Handlebars
+* Styling with PostCSS / PostCSS Next
+* Plain Javascript for the browser/client without any bundling and transforms.
+* ESLint for code quality control
 
-The app will now start on <http://localhost:3000>
+Advanced users would probably want something like React, Browserify/Webpack, Babel etc, but this example will keep it as simple as possible.
 
-If you hit <http://localhost:3000/greeting> you'll get a greeting:
+## Get going
 
-    $ curl localhost:3000/greeting
-    {"greeting":"Hello, world!"}
-
-## Put it in a container
-
-Build a Docker image:
-
-    docker build -t node-hello-world .
-
-Now start a container from the image:
-
-    docker run --network=host node-hello-world
-
-You'll be able to access the API at <http://localhost:3000/greeting>.
-
-## Acknowledgements
-
-This app was created using the [Express application generator][expressgen].
-
-[express]: https://expressjs.com/
-[expressgen]: https://expressjs.com/en/starter/generator.html
-
+* ``npm install``
+* Edit ``src/config.js`` (see ``src/config-example.js`` for a template)
+* ``npm run develop`` to start a development server.
+* Go to ``http://localhost:3000``

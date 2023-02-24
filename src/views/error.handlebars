@@ -1,0 +1,9 @@
+<h2>{{title}} ({{statusCode}})</h2>
+
+<div class='error-message-container'>
+  <h3>Error:</h3>
+  <pre>{{message}}</pre>
+  {{#if development}}
+    <pre>{{stack}}</pre>
+  {{/if}}
+</div>

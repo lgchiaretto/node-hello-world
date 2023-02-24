@@ -1,0 +1,17 @@
+.issue-page__title {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+.issue-page__image-container {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+
+.issue-page__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

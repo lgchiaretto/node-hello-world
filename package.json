@@ -1,14 +1,56 @@
 {
-  "name": "nodejs-hello-world",
-  "version": "0.0.0",
+  "name": "vega-example-frontend-classic-js",
   "private": true,
+  "version": "0.0.1",
+  "description": "Example frontend for Vega written as a classic node app",
+  "author": "Vega Publish <hello@vegapublish.com>",
+  "license": "MIT",
+  "main": "package.json",
+  "keywords": [
+    "sanity",
+    "vega",
+    "frontend",
+    "example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VegaPublish/example-frontend-classic-js.git"
+  },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./src/index.js",
+    "develop": "nodemon ./src/index.js -- development",
+    "prettify": "prettier --write 'src/**/*.{js,css}'"
+  },
+  "engines": {
+    "node": ">=8.10.0"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "morgan": "~1.9.1"
-  }
+    "@lyra/block-content-to-html": "^0.2.6",
+    "@lyra/client": "^0.2.8",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "lodash.uniqueid": "^4.0.1",
+    "lost": "^8.3.1",
+    "moment": "^2.24.0",
+    "postcss": "^7.0.14",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-middleware": "^1.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  },
+  "bugs": {
+    "url": "https://github.com/VegaPublish/example-frontend-classic-js/issues"
+  },
+  "homepage": "https://github.com/VegaPublish/example-frontend-classic-js#readme"
 }

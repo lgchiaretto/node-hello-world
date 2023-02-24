@@ -1,0 +1,41 @@
+<div class="home">
+
+  <div class="home__top" style="background-image: url({{{venue.frontPageImage.asset.url}}})">
+    <div class="home__top-content">
+      <h1 class="home__top-title">{{{venue.title}}}</h1>
+      <p  class="home__top-description">{{{venue.shortDescription}}}</p>
+    </div>
+  </div>
+
+  <div class="home__center">
+
+    <div class="home__primary-content">
+      {{#each articlesInIssueBlocks}}
+        <div class="home__issue">
+          <div class="home__issue-pre-title">Issue</div>
+          <h2 class="home__issue-title">{{{title}}}</h2>
+          <div class="home__articles">
+            {{> articles/articleGrid}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="home__secondary-content">
+      <h2 class="home__issues-title">Issues</h2>
+      <ul class="home__issues">
+        {{#each issues}}
+          <li class="home__issues__issue">
+            <a href="/issues/{{{_id}}}">
+              <span class="home__issues__image-container">
+                <img class="home__issues__image" src="{{{coverImage.asset.url}}}" />
+              </span>
+              <span class="home__issues__meta">Volume {{{volume}}} {{{year}}}</span>
+              <span class="home__issues__title">{{{title}}}</span>
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+</div>

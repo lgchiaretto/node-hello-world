@@ -1,0 +1,124 @@
+.home {
+  lost-utility: clearfix;
+}
+
+.home__top {
+  clear: both;
+  background-size: 100% auto;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  /*@media (--screen-medium) {
+    padding: 5em;
+  }*/
+  display: none;
+}
+
+.home__top-content {
+  @media (--screen-normal) {
+    lost-center: 980px;
+  }
+}
+
+.home__primary-content {
+  @media (--screen-normal) {
+    lost-column: 3/4;
+  }
+}
+
+.home__secondary-content {
+  @media (--screen-normal) {
+    lost-column: 1/4 0;
+    margin-top: 0.7em;
+  }
+}
+
+.home__center {
+  margin: 1em;
+
+  @media (--screen-normal) {
+    margin: 0;
+    lost-center: 980px;
+  }
+}
+
+.home__issue {
+  clear: both;
+}
+
+.home__issue-pre-title {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.home__issue-title {
+  clear: both;
+  font-family: 'Playfair Display';
+  border-bottom: 1px solid #000;
+  margin-top: 0;
+
+  @media (--screen-medium) {
+    margin-bottom: 1rem;
+  }
+}
+
+.home__issues-title {
+  font-family: 'Playfair Display';
+  border-bottom: 1px solid #000;
+  margin-bottom: 0;
+}
+
+.home__issues {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.home__issues__issue {
+  display: block;
+  clear: both;
+}
+
+.home__issues__meta {
+  display: block;
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 0.7em;
+
+  @media (--screen-medium) {
+    margin: 0;
+    font-size: 0.5em;
+  }
+}
+
+.home__issues__title {
+  color: #26a69a;
+}
+
+.home__issues__image-container {
+  display: block;
+  height: 3em;
+  width: 3em;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.home__issues__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.home__issues li {
+  margin: 0;
+  padding: 0.5em 0;
+  display: block;
+}
+
+.home__issues a {
+  text-decoration: none;
+  color: inherit;
+}

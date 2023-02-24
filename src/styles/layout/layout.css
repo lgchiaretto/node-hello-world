@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700');
+
+html,
+body {
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+.layout__center {
+  margin: 0 1rem;
+  padding: 0;
+
+  @media (--screen-normal) {
+    lost-utility: clearfix;
+    margin: 0;
+    lost-center: 980px;
+  }
+}
+
+.error-message-container {
+  background: #eee;
+  padding: 1rem;
+}

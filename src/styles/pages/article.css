@@ -1,0 +1,144 @@
+.article-page__main-image-container {
+  height: 50vw;
+  width: 100%;
+  position: relative;
+}
+
+.article-page__main-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.article-page__primary-content {
+  /*lost-column: 3/4 0;*/
+}
+
+.article-page__secondary-content {
+  /*lost-column: 1/4 0;*/
+}
+
+.article-page__title {
+  font-family: 'Playfair Display';
+  font-size: 2em;
+  margin-bottom: 0;
+
+  @media (--screen-normal) {
+    font-size: 4em;
+  }
+}
+
+.article-page__meta {
+  font-size: 0.7em;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  line-height: 4em;
+}
+
+.article-page__authors {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+  @media (--screen-normal) {
+    justify-content: flex-start;
+  }
+}
+
+.article-page__toc {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid #000;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+.article-page__toc-link {
+  border-left: 3px solid transparent;
+
+  @nest &.active {
+    border-color: #000;
+  }
+}
+
+.article-page__author {
+  display: block;
+}
+
+.article-page__author__name {
+  padding-right: 2em;
+
+  @media (--screen-normal) {
+    display: inline;
+    padding-right: 2em;
+  }
+}
+
+.article-page__author-image-container {
+  height: 3em;
+  width: 3em;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-color: #ccc;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.article-page__author-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article-page__abstract {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  white-space: pre-line;
+}
+
+.article-page__body {
+  line-height: 1.4em;
+}
+
+.article-page__body h1 {
+  padding-top: 1em;
+  font-family: 'Playfair Display';
+}
+
+.article-page__body h2 {
+  padding-top: 1em;
+  font-family: 'Playfair Display';
+}
+
+.article-page__body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-page__body blockquote {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-style: italic;
+  position: relative;
+  margin: 3rem;
+
+  @nest &::before {
+    position: absolute;
+    left: -2rem;
+    top: 1rem;
+    font-size: 5em;
+    opacity: 0.2;
+    content: '"';
+  }
+}
